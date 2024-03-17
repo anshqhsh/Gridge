@@ -21,6 +21,7 @@ import XCircle from "./x-circle.png";
 import XCircle1 from "./x-circle-1.png";
 import Logo from "./logo.png";
 import LogoWhite from "./logo-white.png";
+import HomeMockUp from "./home-mockup.png";
 
 export {
   AlertCircle,
@@ -46,4 +47,5 @@ export {
   XCircle1,
   Logo,
   LogoWhite,
+  HomeMockUp,
 };
