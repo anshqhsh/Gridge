@@ -20,14 +20,21 @@ export interface IStackProps extends React.HtmlHTMLAttributes<HTMLDivElement> {
 const Stack: React.FC<IStackProps> = ({
   direction = "vertical",
   gap = "0",
+  p = "0",
+  m = "0",
   additionalStyles,
+  children,
 }) => {
   return (
     <StStack
       direction={direction}
       gap={gap}
+      p={p}
+      m={m}
       additionalStyles={additionalStyles}
-    />
+    >
+      {children}
+    </StStack>
   );
 };
 

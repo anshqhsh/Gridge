@@ -7,7 +7,7 @@ import Grid from "./grid.png";
 import Heart from "./heart.png";
 import Home from "./home.png";
 import Lock from "./lock.png";
-import mail from "./mail.png";
+import Mail from "./mail.png";
 import MapPin from "./map-pin.png";
 import Menu from "./menu.png";
 import MessageCircle from "./message-circle.png";
@@ -33,7 +33,7 @@ export {
   Heart,
   Home,
   Lock,
-  mail,
+  Mail,
   MapPin,
   Menu,
   MessageCircle,
