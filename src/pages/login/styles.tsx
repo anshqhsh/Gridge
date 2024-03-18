@@ -1,51 +1,54 @@
 import styled from "styled-components";
-import { supportDeviceSize } from "../../components/styles";
-
-export const LoginRoot = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 1080px;
-  height: 100vh;
-  background-color: green;
-
-  @media all and (max-width: ${supportDeviceSize}px) {
-    width: 100vw;
-  }
-`;
+import { TextMdMedium, TextMdSemibold } from "../../assets/styles/styles";
 
 export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  width: 45rem;
-  height: 30rem;
-  padding: 3rem;
-  border: 0.5rem solid yellow;
-  background-color: red;
+  width: 100%;
+  padding: 48px 70px 40px;
 `;
-
-export const InputWrap = styled.input`
+export const LogoWrapper = styled.div`
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 4rem;
-  padding-left: 1rem;
-  margin-bottom: 6rem;
+  margin-bottom: 57px;
 `;
 
-export const LoginButton = styled.div`
+export const LoginWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const LoginButton = styled.button`
+  ${TextMdSemibold}
+  height: 44px;
   width: 100%;
-  padding: 1rem;
-  border-radius: 0.6rem;
-  background-color: rgb(59, 105, 246);
+  padding: 10px 0;
+  border-radius: 30px;
+  background-color: ${({ theme }) => theme.colors.blue500};
+  border: none;
   font-size: 1.8rem;
   font-weight: 600;
   color: white;
   text-align: center;
   cursor: pointer;
+  &:disabled {
+    background-color: ${({ theme }) => theme.colors.blue200};
+  }
+`;
+
+export const PassWordToggle = styled.span`
+  ${TextMdSemibold}
+  position: absolute;
+  right: 20px;
+  color: ${({ theme }) => theme.colors.gray900};
+  cursor: pointer;
+`;
+
+export const StMockUpImg = styled.img`
+  width: 100%;
 `;
